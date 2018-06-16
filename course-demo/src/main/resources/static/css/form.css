@@ -1,0 +1,216 @@
+body {
+	background: black;
+}
+
+.jumbotron {
+	background: url("https://starkassault.files.wordpress.com/2015/06/programming-wallpaper-1920x1080.jpg");
+	height: 220px;
+	margin-bottom: 5px;
+	border-radius: 8px !important;
+}
+
+.navbar {
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+
+.navbar-inverse {
+	background: #043253;
+	border-radius: 8px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.brd {
+	border-radius: 8px;
+	border: 1px solid #043253;
+	border-top: 0px;
+	background-color: #DCDCDC;
+
+}
+
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.panel-info {
+	border-color: #043253;
+	width: 350px;
+}
+
+.panel-title {
+	color: #A9A9A9;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #043253;
+    color: white;
+
+}
+
+.btn-success:hover {
+	background: #043253;
+	color: white !important;
+}
+
+.btn-success:visited {
+	background: #043253;
+	color: white !important; 
+}
+
+.btn-successs {
+	border-color: #043253;
+	background: #043253;
+	color: #A9A9A9;
+}
+
+.btn-success, .btn-success:active {
+    background-color: #043253 !important;
+    color: #A9A9A9 !important;
+}
+
+.btn-primary {
+	background-color: #043253 !important;
+	color: #D3D3D3;
+}
+
+.btn-primary:hover {
+	color: white !important;
+}
+
+.ahr {
+	padding-left: 10px;
+	font-size: 15px;
+}
+
+#cont {
+	float: left;
+	padding-left: 10px;
+}
+
+table {   
+	border-collapse:collapse;
+	border-bottom:1px solid gray;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	width:85%;
+}
+ 
+th {
+	border-bottom:1px solid gray;
+	background:none repeat scroll 0 0 #043253;
+	padding:10px;
+	color: #A9A9A9;
+	padding-left: 60px;
+}
+
+#h{
+	padding-left: 90px;
+}
+
+tr {
+	border-top:1px solid gray;
+	text-align: center;	
+}
+ 
+tr:nth-child(even) {background: #FFFFFF}
+tr:nth-child(odd) {background: #BBBBBB}	
+ 
+#wrapper {width: 100%; margin-top: 0px; }
+#header {width: 70%; background: #09c332; margin-top: 0px; padding:15px 0px 15px 15px;}
+#header h2 {width: 100%; margin:auto; color: #FFFFFF;}
+#container {
+	width: 100%; 
+	margin:auto;
+	padding-left: 100px;
+}
+#container h3 {color: #000;}
+#container #content {margin-top: 20px;}
+
+.add-button {
+	border: 1px solid #666; 
+	border-radius: 5px; 
+	padding: 4px; 
+	font-size: 12px;
+	font-weight: bold;
+	width: 120px; 
+	padding: 5px 10px; 
+	
+	margin-bottom: 15px;
+	background: #cccccc;
+}
+
+.p {
+	padding-left: 280px;
+}
+/*form*/
+
+.form-control {
+    min-width: 0;
+    width: 350px !important;
+}
+
+.form-group {
+	padding-top: 20px;
+}
+
+/*.blas {
+	padding-top: 25px !important;
+}*/
+
+h4 {
+	padding-left: 80px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 5px;
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+#nesto {
+	font-weight: 300;
+	padding-left: 300px;
+	color: white;
+}
+
+.ddw {
+	padding-top: 6px;
+	padding-left: 182px;
+}
+
+#hh {
+	padding-left: 122px;
+}
+
+#z {
+	font-family: 'Patua One', cursive;
+	font-size: 25px;
+	color: #043253;
+	padding-left: 80px;
+}
+
+.error {
+	color: red;
+}
+
+#asadd {
+	padding-left: 45px;
+	width: 590px;
+}
+
+#p {
+	padding-left: 280px;
+}
+
+#j6 {
+	padding-top: 17px;
+}
+
+#j7 {
+	padding-top: 17px;
+}

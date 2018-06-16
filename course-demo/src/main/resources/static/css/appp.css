@@ -1,0 +1,313 @@
+body {
+	background: black;
+}
+
+.jumbotron {
+	background: url("https://starkassault.files.wordpress.com/2015/06/programming-wallpaper-1920x1080.jpg");
+	height: 220px;
+	margin-bottom: 5px;
+	border-radius: 8px !important;
+}
+
+.navbar {
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+
+.navbar-inverse {
+	background: #043253;
+	border-radius: 8px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.brd {
+	border-radius: 8px;
+	border: 1px solid #043253;
+	border-top: 0px;
+	background-color: #DCDCDC;
+
+}
+
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.panel-info {
+	border-color: #043253;
+	width: 350px;
+}
+
+.panel-title {
+	color: #A9A9A9;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #043253;
+    color: white;
+
+}
+
+.btn-success:hover {
+	background: #043253;
+	color: white !important;
+}
+
+.btn-success:visited {
+	background: #043253;
+	color: white !important; 
+}
+
+.btn-successs {
+	border-color: #043253;
+	background: #043253;
+	color: #A9A9A9;
+}
+
+.btn-success, .btn-success:active {
+    background-color: #043253 !important;
+    color: #A9A9A9 !important;
+}
+
+.btn-primary {
+	background-color: #043253 !important;
+	color: #D3D3D3;
+}
+
+.btn-primary:hover {
+	color: white !important;
+}
+
+.ahr {
+	padding-left: 10px;
+	font-size: 15px;
+}
+
+#cont {
+	float: left;
+	padding-left: 10px;
+}
+
+table {   
+	border-collapse:collapse;
+	border-bottom:1px solid gray;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	width:85%;
+}
+ 
+th {
+	border-bottom:1px solid gray;
+	background:none repeat scroll 0 0 #043253;
+	padding:10px;
+	color: #A9A9A9;
+	padding-left: 60px;
+}
+
+#xxx {
+	width: 50%;
+}
+
+#r{
+	padding-left:90px;
+}
+
+#r1{
+	padding-left:110px;
+}
+
+#rr {
+	padding-left: 80px;
+}
+
+#h{
+	padding-left: 90px;
+}
+
+#hh11 {
+	padding-left: 75px;
+}
+
+#s{
+	padding-left: 70px;
+}
+
+#ss{
+	padding-left: 85px;
+}
+
+#l{
+	padding-left: 85px;
+}
+
+#l1 {
+	padding-left: 45px;
+}
+
+#ll{
+	padding-left: 75px;
+}
+
+tr {
+	border-top:1px solid gray;
+	text-align: ;	
+}
+
+.w1 {
+	padding-left: 50px;
+}
+
+#w11 {
+	padding-left: 70px;
+}
+
+#w2 {
+	padding-left: 75px;
+}
+
+#w3 {
+	padding-left: 35px;
+}
+
+#w4 {
+	padding-left: 77px;
+}
+ 
+tr:nth-child(even) {background: #FFFFFF}
+tr:nth-child(odd) {background: #BBBBBB}	
+ 
+#wrapper {width: 100%; margin-top: 0px; }
+#header {width: 70%; background: #09c332; margin-top: 0px; padding:15px 0px 15px 15px;}
+#header h2 {width: 100%; margin:auto; color: #FFFFFF;}
+#container {
+	width: 100%; 
+	margin:auto;
+	padding-left: 200px;
+}
+
+#container1 {
+	width: 100%; 
+	margin:auto;
+	padding-left: 50px;
+}
+#container h3 {color: #000;}
+#container #content {margin-top: 20px;}
+
+#containerr {
+	height: 250px;
+}
+
+.add-button {
+	border: 1px solid #666; 
+	border-radius: 5px; 
+	padding: 4px; 
+	font-size: 12px;
+	font-weight: bold;
+	width: 120px; 
+	padding: 5px 10px; 
+	margin-bottom: 15px;
+	background: #cccccc;
+}
+
+.add-button:hover {
+	color: white;
+}
+
+#p {
+	padding-left: 200px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 5px;
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+#nesto {
+	font-weight: 300;
+	padding-left: 300px;
+	color: white;
+}
+
+#z {
+	font-family: 'Patua One', cursive;
+	font-size: 25px;
+	color: #043253;
+	padding-left: 0px;
+}
+
+.z1 {
+	font-family: 'Patua One', cursive;
+	font-size: 15px;
+	padding-left: 25px;
+	color: #043253;
+}
+
+#zz {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 20px;
+}
+
+#zz1 {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 20px;
+	color: red;
+	padding-left: 500px;
+	padding-top: 80px;
+}
+
+.zz2 {
+	font-family: 'Rajdhani', sans-serif;
+}
+
+#j6 {
+	padding-top: 17px;
+}
+
+#j7 {
+	padding-top: 17px;
+}
+
+#j9 {
+	padding-top: 3px;
+}
+
+#cc1 {
+	padding-left: 450px;
+	font-family: 'Patua One', cursive;
+	color: #043253;
+	font-size: 25px;
+}
+
+#cc2 {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 20px;
+	color: #043253;
+}
+
+#cc3 {
+	padding-left: 210px;
+}
+
+#cc4 {
+	padding-left: 290px;
+}
+
+#cc5 {
+	font-family: 'Rajdhani', sans-serif;
+	padding-left: 30px;
+	font-size: 20px;
+	color: #043253;
+}
+
+#cc6 {
+	padding-left: 285px;
+}
+
+#cc7 {
+	padding-left: 320px;
+}
