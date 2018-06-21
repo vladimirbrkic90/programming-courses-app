@@ -3,11 +3,16 @@ package com.springcourse.entity;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name="review")
@@ -20,6 +25,12 @@ public class Review {
 	
 	@Column(name="comment")
 	private String comment;
+	
+	@ManyToOne(cascade= {CascadeType.MERGE,
+			 CascadeType.DETACH, CascadeType.REFRESH}, fetch=FetchType.EAGER)
+	@JoinColumn(name="course_id")
+	@JsonIgnore
+	private Course course;
 	
 	@OneToOne(mappedBy="review", cascade=CascadeType.ALL)
 	private Enrol enrol;
@@ -54,6 +65,14 @@ public class Review {
 
 	public void setComment(String comment) {
 		this.comment = comment;
+	}
+
+	public Course getCourse() {
+		return course;
+	}
+
+	public void setCourse(Course course) {
+		this.course = course;
 	}
 
 	@Override

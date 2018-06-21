@@ -43,7 +43,8 @@ public class Enrol {
 	@JsonIgnore
 	private Course course;
 	
-	@OneToOne(cascade = CascadeType.ALL, fetch=FetchType.EAGER)
+	@OneToOne(cascade= {CascadeType.MERGE,
+			 CascadeType.DETACH, CascadeType.REFRESH}, fetch=FetchType.EAGER)
 	@JoinColumn(name="review_id")
 	@JsonIgnore
 	private Review review;

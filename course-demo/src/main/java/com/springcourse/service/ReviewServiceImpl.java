@@ -15,13 +15,13 @@ public class ReviewServiceImpl {
 	@Autowired
 	private ReviewRepository reviewRepository;
 	
-	@Transactional
+/*	@Transactional
 	public List<Review> getReviews(int id) {
 		
 		List<Review> list = reviewRepository.findReviewsByCourseId(id);
 		
 		return list;
-	}
+	} */
 	
 	@Transactional
 	public void addReview(Review review) {

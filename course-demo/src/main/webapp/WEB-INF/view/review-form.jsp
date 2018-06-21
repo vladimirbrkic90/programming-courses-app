@@ -1,20 +1,24 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
-
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Student</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Add Review</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Patua+One|Rajdhani" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One|Rajdhani" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="/resources/css/appp-p.css">
+	<link rel="stylesheet" type="text/css" href="/resources/css/appp.css">
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -51,62 +55,29 @@
 		
 		</nav>
 
-		<div id="container">
+		<div id="container1">
 		
-			<div id="content">
-
-				<p class="x1">My Courses:</p>
+			<p id="cc51"><img src="${review.course.image}" width="50px" height="40px"> ${review.course.title}</p>
+			
+			<form:form action="saveReview" modelAttribute="review"  method="POST" class="form-horizontal">
+			
+			<form:hidden path="id" />
+			<form:hidden path="course.id" />
+			
+				<form:textarea path="comment" class="form-control" rows="5" cols="20" />
 				<br>
 				
-
-
-			<ul class="products">
-				<c:forEach var="enrol" items="${enrols}">
-				
-				<c:url var="courseVideoLink" value="/student/showCourseVideo">
-						<c:param name="courseId" value="${enrol.course.id}" />
-					</c:url>
-					
-				<a href="${courseVideoLink}">
-				<li>
-					<img src="${enrol.course.image}">
-					<p></p>
-					<p id="zz">${enrol.course.title}</p>
-					
-				</li>
-				</a>
-				</c:forEach>
-			</ul> 
-			
-			<br>
-			<br>
-		
 				
 			
-			<p class="x1">Recommended for You:</p>
+		    		
+		      		<button type="submit" class="btn btn-default" id="cc21">Submit</button>
+		    	
+		  	
+			
+			</form:form>
 			<br>
 			
-			<c:if test="${courses != null}"> 
-			<ul class="products">
-				<c:forEach var="course" items="${courses}">
-				
-				<c:url var="enrolLink" value="/enrol/showCourseEnrolForm">
-						<c:param name="courseId" value="${course.id}" />
-				</c:url>
-				
-				<a href="${enrolLink}">	
-				<li>
-					<img src="${course.image}">
-					<p></p>
-					<p id="zz">${course.title}</p>
-					
-				</li>
-				</a>
-				</c:forEach>
-				
-			</ul>
-	    	</c:if> 
-			</div>	
+			
 		
 		</div>
 
@@ -120,7 +91,6 @@
 	Copyright 2018 Vladimir Brkic; Developed by: Vladimir Brkic; vladimirbrkic90@gmail.com
 </p>
 </div>
-	
 	
 </body>
 </html>

@@ -8,6 +8,6 @@ import com.springcourse.entity.Review;
 
 public interface ReviewRepository extends JpaRepository<Review, Integer> {
 	
-	public List<Review> findReviewsByCourseId(int id);
+//	List<Review> findReviewsByCourseId(int id);
 
 }

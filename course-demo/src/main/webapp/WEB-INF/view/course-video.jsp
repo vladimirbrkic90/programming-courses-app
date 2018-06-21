@@ -4,10 +4,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Student Course</title>
+	<title>Course Video</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Patua+One|Rajdhani" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="/resources/css/appp-p.css">
 
@@ -55,14 +57,25 @@
 			
 				
 				<p id="j111">
-				${course}
+				${courseVideo}
 				</p>
+				
+				<br>
+				
+				<c:url var="reviewLink" value="/review/showReviewAddForm">
+						<c:param name="courseId" value="${course.id}" />
+				</c:url>
+				
+				
+			<p>	<a href="${reviewLink}"><span id="j1111"><i class="fas fa-file-archive"></i> Add Review</span></a> </p>
+			<p>	<a href="${courseTest}"><span id="j1111"><i class="fas fa-question-circle"></i> Test Your knowledge</span></a> </p>
+				
 		
 				
 		
 		</div>
 
-	
+
 	
 </div>
 

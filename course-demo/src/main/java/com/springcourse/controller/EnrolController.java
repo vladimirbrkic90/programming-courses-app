@@ -181,9 +181,9 @@ public class EnrolController {
 			enrolService.saveEnrol(enrol);
 			
 			return "index-courses";
-		}
+		} 
 	
-	}
+	} 
 	
 	@GetMapping("/deleteEnrol")
 	public String deleteEnrol(@RequestParam("enrolId") int id) {

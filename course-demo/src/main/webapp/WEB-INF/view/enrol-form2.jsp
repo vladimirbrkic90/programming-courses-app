@@ -41,8 +41,8 @@
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="#" id="j7"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> About</a></li>
-					<li><a href="#" id="j6"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Contact</a></li>
+					<li><a href="${pageContext.request.contextPath}/security/about" id="j7"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> About</a></li>
+					<li><a href="${pageContext.request.contextPath}/security/contact" id="j6"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					
@@ -56,9 +56,9 @@
 		<div id="container">
 		<p id="z">Enrol course: ${enrol.course.title}<p>
 		
-		<c:url var="course" value="enrol.course.id">
+	<!--  	<c:url var="course" value="enrol.course.id">
 					<c:param name="course_id" value="${course}" />
-		</c:url>
+		</c:url> -->
 		
 		<form:form action="saveEnrol" modelAttribute="enrol"  method="POST" class="form-horizontal">
 

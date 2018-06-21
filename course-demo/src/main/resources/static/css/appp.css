@@ -289,6 +289,12 @@ hr {
 	color: #043253;
 }
 
+#cc21 {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 15px;
+	color: #043253;
+}
+
 #cc3 {
 	padding-left: 210px;
 }
@@ -304,10 +310,21 @@ hr {
 	color: #043253;
 }
 
+#cc51 {
+	font-family: 'Rajdhani', sans-serif;
+	padding-left: 3px;
+	font-size: 25px;
+	color: #043253;
+}
+
 #cc6 {
 	padding-left: 285px;
 }
 
 #cc7 {
 	padding-left: 320px;
+}
+
+textarea {
+	max-width: 50%;
 }

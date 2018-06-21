@@ -88,7 +88,9 @@ public class StudentController {
 	public String showCourseVideo(@RequestParam("courseId") int id, Model model) {
 		
 		Optional<Course> course = courseService.getCourse(id);
-		model.addAttribute("course", course.get().getVideo());
+		model.addAttribute("course", course.get());
+		model.addAttribute("courseVideo", course.get().getVideo());
+		model.addAttribute("courseTest", course.get().getTest());
 		
 		if(course.get().getId() == 25) {
 			return "index";

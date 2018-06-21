@@ -50,14 +50,18 @@ public class Course {
 	@Column(name="image")
 	private String image;
 	
+	@Column(name="test")
+	private String test;
+	
 	@ManyToOne(cascade= {CascadeType.PERSIST, CascadeType.MERGE,
 						 CascadeType.DETACH, CascadeType.REFRESH})
 	@JoinColumn(name="instructor_id")
 	@JsonIgnore
 	private Instructor instructor;
 	
-	@OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
-	@JoinColumn(name="course_id")
+	@OneToMany(fetch=FetchType.LAZY,
+			   mappedBy="course",
+			   cascade=CascadeType.ALL)
 	@JsonIgnore
 	private List<Review> reviews;
 	
@@ -145,6 +149,14 @@ public class Course {
 		this.image = image;
 	}
 
+	public String getTest() {
+		return test;
+	}
+
+	public void setTest(String test) {
+		this.test = test;
+	}
+
 	public Instructor getInstructor() {
 		return instructor;
 	}
@@ -169,6 +181,7 @@ public class Course {
 		}
 		
 		reviews.add(theReview);
+		theReview.setCourse(this);
 	}
 
 	public List<Student> getStudents() {
