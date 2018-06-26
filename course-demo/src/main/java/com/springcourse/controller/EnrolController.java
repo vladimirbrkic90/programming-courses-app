@@ -34,13 +34,12 @@ import com.springcourse.service.StudentServiceImpl;
 @Controller
 @RequestMapping("/enrol")
 public class EnrolController {
-	
-	@Autowired
-	private CourseServiceImpl courseService;
 
 	private EnrolServiceImpl enrolService;
 	
 	private StudentServiceImpl studentService;
+	
+	private CourseServiceImpl courseService;
 	
 	@Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
@@ -49,9 +48,10 @@ public class EnrolController {
 	UserDetailsManager userDetailsManager;
 	
 	@Autowired
-	public EnrolController(EnrolServiceImpl enrolService, StudentServiceImpl studentService) {
+	public EnrolController(EnrolServiceImpl enrolService, StudentServiceImpl studentService, CourseServiceImpl courseService) {
 		this.enrolService = enrolService;
 		this.studentService = studentService;
+		this.courseService = courseService;
 	}
 	
 	@GetMapping("/list")

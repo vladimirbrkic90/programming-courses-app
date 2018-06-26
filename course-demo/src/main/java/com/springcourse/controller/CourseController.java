@@ -77,6 +77,17 @@ public class CourseController {
 		
 	}
 	
+	@GetMapping("/showCourseReviews")
+	public String showCourseReviews(@RequestParam("courseId") int id, Model model) {
+		
+		Optional<Course> course = courseService.getCourse(id);
+		
+		model.addAttribute("course", course.get());
+		model.addAttribute("courseReviews", course.get().getReviews());
+		
+		return "course-reviews";
+	}
+	
 	@GetMapping("/deleteCourse")
 	public String deleteCourse(@RequestParam("courseId") int id) {
 		

@@ -119,7 +119,7 @@ th {
 }
 
 #h{
-	padding-left: 75px;
+	padding-left: 100px;
 }
 
 #h1{
@@ -323,4 +323,17 @@ li img {
 	font-family: 'Rajdhani', cursive;
 	color: #043253;
 	font-size: 18px;
+}
+
+#cc51 {
+	font-family: 'Rajdhani', sans-serif;
+	padding-left: 3px;
+	font-size: 25px;
+	color: #043253;
+}
+
+#zz51 {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 15px;
+	color: #043253;
 }

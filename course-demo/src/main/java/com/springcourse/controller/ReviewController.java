@@ -22,14 +22,18 @@ import com.springcourse.service.ReviewServiceImpl;
 @RequestMapping("/review")
 public class ReviewController {
 	
-	@Autowired
 	CourseServiceImpl courseService;
 	
-	@Autowired
 	ReviewServiceImpl reviewService;
 	
-	@Autowired
 	EnrolServiceImpl enrolService;
+	
+	@Autowired
+	public ReviewController(CourseServiceImpl courseService, ReviewServiceImpl reviewService, EnrolServiceImpl enrolService) {
+		this.courseService = courseService;
+		this.reviewService = reviewService;
+		this.enrolService = enrolService;
+	}
 	
 	@GetMapping("/showReviewAddForm")
 	public String addReview(@RequestParam("courseId") int courseId, Model model) {

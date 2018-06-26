@@ -67,15 +67,15 @@
 		<table id="xxx">
 	
 		<tr>
-			<th id="rr">Enroled Courses</th>
+			<th id="">Enroled Courses</th>
 			<th>Enrol Date</th>
 		</tr>
 		
 		<c:forEach var="enrol" items="${enrols}">
 		
 			<tr>
-				<td> ${enrol.course.title} </td>
-				<td> ${enrol.date} </td>
+				<td id="sw1"> ${enrol.course.title} </td>
+				<td id="sw"> ${enrol.date} </td>
 				
 			</tr>
 			

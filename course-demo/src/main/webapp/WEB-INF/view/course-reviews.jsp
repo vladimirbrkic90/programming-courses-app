@@ -57,105 +57,22 @@
 		
 		</nav>
 		
-				<!-- Place for messages: error, alert etc ... -->
-					    <div class="form-group" id="asdd">
-					        <div class="col-xs-15">
-					            <div>
-								
-									<!-- Check for registration error -->
-									<c:if test="${error != null}">
-								
-										<div class="alert alert-danger col-xs-offset-1 col-xs-10">
-											You already enrolled ${course} course!
-										</div>
-		
-									</c:if>
-									
-									<c:if test="${coursee != null}">	   
-										            
-										<div class="alert alert-success col-xs-offset-1 col-xs-10">
-											You have successfully enrolled ${coursee} course.
-										</div>
-									
-								    </c:if>
-								    
-								    <c:if test="${success != null}">	   
-										            
-										<div class="alert alert-success col-xs-offset-1 col-xs-10">
-											${success}
-										</div>
-									
-								    </c:if>
-								    
-								     <c:if test="${error2 != null}">	   
-										            
-										<div class="alert alert-danger col-xs-offset-1 col-xs-10">
-											${error2}
-										</div>
-									
-								    </c:if>
-																			
-					            </div>
-					        </div>
-					    </div>
-		
-		<div id="container">
+		<div id="container1">
 	
-		<div id="content">
-		 
-
-	<table>
-	
-		<tr>
-			<th> </th>
-			<th>Title</th>
-			<th id="s1">Instructor</th>
-			<th id="j">Price</th>
-			<th id="h">Action</th>
-		</tr>
+		<p id="cc51"><img src="${course.image}" width="50px" height="40px"> ${course.title} - Reviews</p>
+		<br>
 		
-		<c:forEach var="tempCourse" items="${courses}">
-		
-					<!-- Construct an "enrol" link with course id -->
-					<c:url var="enrolLink" value="/enrol/showCourseEnrolForm">
-						<c:param name="courseId" value="${tempCourse.id}" />
-					</c:url>
-					
-					<!-- Construct an "show reviews" link with course id -->
-					<c:url var="courseReviewsLink" value="/course/showCourseReviews">
-						<c:param name="courseId" value="${tempCourse.id}" />
-					</c:url>
-		
-			<tr>
-				<td><img src="${tempCourse.image}"></td>
-				<td> ${tempCourse.title} </td>
-				<td id="s"> ${tempCourse.instructor.firstName} ${tempCourse.instructor.lastName} </td>
-				<td id="s11"> ${tempCourse.price} </td>
-				
-				
-				
-				<td id="h1">
-
-					<!-- display the enrol link -->
-					<a href="${enrolLink}">Enrol</a>
-								||
-					<!-- display the review link -->
-					<a href="${courseReviewsLink}">Reviews</a>
-					
-					
-				</td>
-				
-			</tr>
-		
-		</c:forEach>
+		<ul id="s11">
+			<c:forEach var="review" items="${courseReviews}">
+			
+			<li id="zz51">
+				<p id="">${review.comment}</p>
+			</li>
+			
+			</c:forEach>
+		</ul>
 	
-	</table>
-	<br><br>
-	
-	
-	</div>
-	
-</div>
+		</div>
 
 	
 </div>

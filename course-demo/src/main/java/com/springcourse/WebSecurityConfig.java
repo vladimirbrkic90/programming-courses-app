@@ -36,7 +36,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .authorizeRequests()
             	.antMatchers("/").permitAll()
             		.antMatchers("/resources/**", "/enrol/course/list", "/enrol/showCourseEnrolForm", "/enrol/saveEnrol", "/security/showRegistrationForm2",
-            				"/security/processRegistrationForm2", "/security/contact", "/security/about", "/enrol/course/searchCourse").permitAll()
+            				"/security/processRegistrationForm2", "/security/contact", "/security/about", "/enrol/course/searchCourse", "/course/showCourseReviews").permitAll()
             		.antMatchers("/instructor/showFormForAdd", "/instructor/showFormForUpdate", "/instructor/deleteInstructor", "/instructor/list").hasAuthority("ADMIN")
             		.antMatchers("/course/showFormForAdd", "/course/showFormForUpdate", "/course/deleteCourse").hasAuthority("ADMIN")
             		.antMatchers("/student/deleteStudent").hasAuthority("ADMIN")
