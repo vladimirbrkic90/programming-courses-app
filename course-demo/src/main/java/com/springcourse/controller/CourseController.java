@@ -62,12 +62,11 @@ public class CourseController {
 							@RequestParam("instructor") Instructor i) {
 		
 		Optional<Instructor> ins = instructorService.getInstructor(i.getId());
-		//theCourse.setInstructor(ins.get());
+		
 		if(bindingResult.hasErrors()) {
 			return "course-form";
 		}
 		else {
-		//	Optional<Instructor> ins = instructorService.getInstructor(i.getId());
 			theCourse.setInstructor(ins.get());
 			
 			courseService.saveCourse(theCourse);
